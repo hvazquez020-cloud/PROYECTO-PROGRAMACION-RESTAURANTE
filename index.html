@@ -20,13 +20,21 @@
     <h1 class="text-warning">La Mesa de Oro</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Menú</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav><div class="my-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded my-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">La Mesa de Oro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><div class="my-3">
   <a href="#" class="btn btn-warning">Reservar una mesa</a>
 </div>
 <div class="alert alert-success" role="alert">
@@ -34,7 +42,25 @@
 </div>
       <section>
     <h2>Nuestro Menú</h2>
-
+<div id="carruselMenu" class="carousel slide my-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/ensalada.jpg" class="d-block w-100" alt="Ensalada César">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/filete.jpg" class="d-block w-100" alt="Filete a la Parrilla">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/pasta.jpg" class="d-block w-100" alt="Pasta Alfredo">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselMenu" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselMenu" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
     <h3>Entradas</h3>
     <table>
       <thead>
@@ -144,9 +170,33 @@
     </ol>
 
     <p>
-      ¿Quieres ver el menú de bebidas?
-      <a href="#">Haz clic aquí</a>
-    </p>
+  ¿Quieres ver el menú de bebidas?
+  <button type="button" class="btn btn-link p-0" data-bs-toggle="modal" data-bs-target="#modalBebidas">
+    Haz clic aquí
+  </button>
+</p>
+
+<div class="modal fade" id="modalBebidas" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Menú de Bebidas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Agua fresca de horchata - $35 MXN</li>
+          <li>Limonada natural - $40 MXN</li>
+          <li>Café americano - $30 MXN</li>
+          <li>Refresco - $30 MXN</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
   <footer>
