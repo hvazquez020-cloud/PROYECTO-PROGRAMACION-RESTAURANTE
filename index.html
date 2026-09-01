@@ -67,9 +67,14 @@
       Entradas
     </button>
   </li>
-  <li class="nav-item" role="presentation">
+   <li class="nav-item" role="presentation">
     <button class="nav-link" id="fuertes-tab" data-bs-toggle="tab" data-bs-target="#fuertes-tab-pane" type="button" role="tab" aria-controls="fuertes-tab-pane" aria-selected="false">
       Platos Fuertes
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="postres-tab" data-bs-toggle="tab" data-bs-target="#postres-tab-pane" type="button" role="tab" aria-controls="postres-tab-pane" aria-selected="false">
+      Postres
     </button>
   </li>
 </ul>
@@ -149,6 +154,35 @@
           </td>
           <td><span class="precio text-success">$150 MXN</span></td>
         </tr>
+            </tbody>
+    </table>
+  </div>
+
+  <div class="tab-pane fade" id="postres-tab-pane" role="tabpanel" aria-labelledby="postres-tab" tabindex="0">
+    <table>
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Postre</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="imagenes/flan.jpg" alt="Flan Napolitano" width="120" style="height: 90px; object-fit: cover;"></td>
+          <td>Flan Napolitano</td>
+          <td><span class="precio text-success">$45 MXN</span></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/pastel.jpg" alt="Pastel de Chocolate" width="120" style="height: 90px; object-fit: cover;"></td>
+          <td>Pastel de Chocolate</td>
+          <td><span class="precio text-success">$55 MXN</span></td>
+        </tr>
+        <tr>
+          <td><img src="imagenes/helado.jpg" alt="Helado" width="120" style="height: 90px; object-fit: cover;"></td>
+          <td>Helado</td>
+          <td><span class="precio text-success">$40 MXN</span></td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -178,6 +212,21 @@
     <p class="card-text">El favorito de nuestros clientes, cocinado al punto perfecto.</p>
   </div>
 </div>
+<h3 class="mt-4">Complementos</h3>
+<ul class="list-group my-3">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Arroz
+    <span class="precio text-success">$25 MXN</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Frijoles
+    <span class="precio text-success">$25 MXN</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Tortillas extra
+    <span class="precio text-success">$15 MXN</span>
+  </li>
+</ul>
 <h3 class="mt-4">Preguntas Frecuentes</h3>
 <div class="accordion my-3" id="accordionFAQ">
   <div class="accordion-item">
