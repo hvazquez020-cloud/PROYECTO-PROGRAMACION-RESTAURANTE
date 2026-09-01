@@ -227,6 +227,69 @@
     <p class="mb-0"><strong>Correo:</strong> contacto@lamesadeoro.com</p>
   </div>
 </div>
+<h3 class="mt-4">Arma tu Pedido</h3>
+<form class="my-3">
+
+  <div class="mb-3">
+    <label for="nombreCliente" class="form-label">Tu nombre</label>
+    <input type="text" class="form-control" id="nombreCliente" placeholder="Escribe tu nombre">
+  </div>
+
+  <div class="mb-3">
+    <label for="comidaPrincipal" class="form-label">Comida principal</label>
+    <select class="form-select" id="comidaPrincipal">
+      <option selected disabled>Elige tu platillo</option>
+      <option value="filete">Filete a la Parrilla</option>
+      <option value="pasta">Pasta Alfredo</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label d-block">Entrada</label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="entrada" id="entradaEnsalada" value="ensalada">
+      <label class="form-check-label" for="entradaEnsalada">Ensalada César</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="entrada" id="entradaSopa" value="sopa">
+      <label class="form-check-label" for="entradaSopa">Sopa de Tortilla</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="postre" class="form-label">Postre</label>
+    <select class="form-select" id="postre">
+      <option selected disabled>Elige tu postre</option>
+      <option value="flan">Flan Napolitano</option>
+      <option value="pastel">Pastel de Chocolate</option>
+      <option value="helado">Helado</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label d-block">Complementos adicionales</label>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="compArroz" value="arroz">
+      <label class="form-check-label" for="compArroz">Arroz</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="compFrijoles" value="frijoles">
+      <label class="form-check-label" for="compFrijoles">Frijoles</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="compTortillas" value="tortillas">
+      <label class="form-check-label" for="compTortillas">Tortillas extra</label>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="instrucciones" class="form-label">Instrucciones especiales</label>
+    <textarea class="form-control" id="instrucciones" rows="3" placeholder="Ej. sin cebolla, término medio, alguna alergia, etc."></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-warning">Enviar pedido</button>
+
+</form>
     <h3>¿Cómo ordenar?</h3>
     <ol>
       <li>Elige tus platillos favoritos del menú.</li>
