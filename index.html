@@ -188,46 +188,58 @@
   </div>
 </div>
 
-   <div class="card my-3 border border-warning rounded-4">
-  <div class="card-header">
-    Recomendaciones del chef
+ <div class="row g-3 my-3">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 border border-warning rounded-4">
+      <div class="card-header">
+        Recomendaciones del chef
+      </div>
+      <div class="card-body">
+        <p class="card-text">Platillos sugeridos por el chef.</p>
+      </div>
+      <div class="card-footer text-muted">
+        Actualizado esta semana
+      </div>
+    </div>
   </div>
-  <div class="card-body">
-    <p class="card-text">Platillos sugeridos por el chef.</p>
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 border border-warning rounded-4">
+      <div class="card-body">
+        <h5 class="card-title">Sobre Nosotros</h5>
+        <p class="card-text">En La Mesa de Oro combinamos sabores clásicos con un toque moderno, usando siempre ingredientes frescos y de temporada.</p>
+      </div>
+    </div>
   </div>
-  <div class="card-footer text-muted">
-    Actualizado esta semana
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 border border-warning rounded-4">
+      <img src="imagenes/filete.jpg" class="card-img-top" alt="Filete a la Parrilla">
+      <div class="card-body">
+        <h5 class="card-title">Platillo Estrella: Filete a la Parrilla</h5>
+        <p class="card-text">El favorito de nuestros clientes, cocinado al punto perfecto.</p>
+      </div>
+    </div>
   </div>
 </div>
-<div class="card my-3 border border-warning rounded-4">
-  <div class="card-body">
-    <h5 class="card-title">Sobre Nosotros</h5>
-    <p class="card-text">En La Mesa de Oro combinamos sabores clásicos con un toque moderno, usando siempre ingredientes frescos y de temporada.</p>
+<div class="row g-4 my-3">
+  <div class="col-12 col-lg-6">
+    <h3 class="text-center">Complementos</h3>
+    <ul class="list-group my-3 rounded-3 overflow-hidden border border-secondary-subtle">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Arroz
+        <span class="precio text-success">$25 MXN</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Frijoles
+        <span class="precio text-success">$25 MXN</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Tortillas extra
+        <span class="precio text-success">$15 MXN</span>
+      </li>
+    </ul>
   </div>
-</div>
-<div class="card my-3 border border-warning rounded-4" style="width: 18rem;">
-  <img src="imagenes/filete.jpg" class="card-img-top" alt="Filete a la Parrilla">
-  <div class="card-body">
-    <h5 class="card-title">Platillo Estrella: Filete a la Parrilla</h5>
-    <p class="card-text">El favorito de nuestros clientes, cocinado al punto perfecto.</p>
-  </div>
-</div>
-<h3 class="mt-4 text-center">Complementos</h3>
-<ul class="list-group my-3 rounded-3 overflow-hidden border border-secondary-subtle">
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Arroz
-    <span class="precio text-success">$25 MXN</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Frijoles
-    <span class="precio text-success">$25 MXN</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Tortillas extra
-    <span class="precio text-success">$15 MXN</span>
-  </li>
-</ul>
-<h3 class="mt-4">Preguntas Frecuentes</h3>
+  <div class="col-12 col-lg-6">
+    <h3>Preguntas Frecuentes</h3>
 <div class="accordion my-3" id="accordionFAQ">
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -266,17 +278,21 @@
     </div>
   </div>
 </div>
-<button class="btn btn-outline-dark my-3" type="button" data-bs-toggle="collapse" data-bs-target="#infoContacto">
-  Ver información de contacto
-</button>
-<div class="collapse" id="infoContacto">
-  <div class="card card-body">
-    <p class="mb-1"><strong>Dirección:</strong> Blvd. Rosario, Hermosillo, Sonora.</p>
-    <p class="mb-1"><strong>Teléfono:</strong> (662) 123-4567</p>
-    <p class="mb-0"><strong>Correo:</strong> contacto@lamesadeoro.com</p>
+    <button class="btn btn-outline-dark my-3" type="button" data-bs-toggle="collapse" data-bs-target="#infoContacto">
+      Ver información de contacto
+    </button>
+    <div class="collapse" id="infoContacto">
+      <div class="card card-body">
+        <p class="mb-1"><strong>Dirección:</strong> Blvd. Rosario, Hermosillo, Sonora.</p>
+        <p class="mb-1"><strong>Teléfono:</strong> (662) 123-4567</p>
+        <p class="mb-0"><strong>Correo:</strong> contacto@lamesadeoro.com</p>
+      </div>
+    </div>
   </div>
 </div>
 <h3 class="mt-4">Arma tu Pedido</h3>
+<div class="row">
+  <div class="col-12 col-lg-8 col-xl-6 mx-auto">
 <form class="my-3">
 
   <div class="mb-3">
@@ -336,9 +352,11 @@
     <textarea class="form-control" id="instrucciones" rows="3" placeholder="Ej. sin cebolla, término medio, alguna alergia, etc."></textarea>
   </div>
 
-  <button type="submit" class="btn btn-warning">Enviar pedido</button>
+   <button type="submit" class="btn btn-warning">Enviar pedido</button>
 
 </form>
+  </div>
+</div>
     <h3>¿Cómo ordenar?</h3>
     <ol>
       <li>Elige tus platillos favoritos del menú.</li>
